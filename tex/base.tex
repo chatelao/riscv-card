@@ -1,6 +1,5 @@
 \section*{RISC-V Instruction Set}
 
-\subsection*{Core Instruction Formats}
 \small
 \begin{center}
 \begin{tabular}
@@ -24,7 +23,7 @@
 \multicolumn{1}{c|}{rs1} &
 \multicolumn{1}{c|}{funct3} &
 \multicolumn{1}{c|}{rd} &
-\multicolumn{1}{c|}{opcode} & R-type \\
+\multicolumn{1}{c|}{opcode} & R-type (Core) \\
 \cline{2-11}
 
 &
@@ -32,7 +31,7 @@
 \multicolumn{1}{c|}{rs1} &
 \multicolumn{1}{c|}{funct3} &
 \multicolumn{1}{c|}{rd} &
-\multicolumn{1}{c|}{opcode} & I-type \\
+\multicolumn{1}{c|}{opcode} & I-type (Core) \\
 \cline{2-11}
 
 &
@@ -41,7 +40,7 @@
 \multicolumn{1}{c|}{rs1} &
 \multicolumn{1}{c|}{funct3} &
 \multicolumn{1}{c|}{imm[4:0]} &
-\multicolumn{1}{c|}{opcode} & S-type \\
+\multicolumn{1}{c|}{opcode} & S-type (Core) \\
 \cline{2-11}
 
 &
@@ -50,20 +49,42 @@
 \multicolumn{1}{c|}{rs1} &
 \multicolumn{1}{c|}{funct3} &
 \multicolumn{1}{c|}{imm[4:1$\vert$11]} &
-\multicolumn{1}{c|}{opcode} & B-type \\
+\multicolumn{1}{c|}{opcode} & B-type (Core) \\
 \cline{2-11}
 
 &
 \multicolumn{8}{|c|}{imm[31:12]} &
 \multicolumn{1}{c|}{rd} &
-\multicolumn{1}{c|}{opcode} & U-type \\
+\multicolumn{1}{c|}{opcode} & U-type (Core) \\
 \cline{2-11}
 
 &
 \multicolumn{8}{|c|}{imm[20$\vert$10:1$\vert$11$\vert$19:12]} &
 \multicolumn{1}{c|}{rd} &
-\multicolumn{1}{c|}{opcode} & J-type \\
+\multicolumn{1}{c|}{opcode} & J-type (Core) \\
 \cline{2-11}
+
+&
+\multicolumn{2}{|c|}{funct5} &
+\multicolumn{1}{|c|}{aq} &
+\multicolumn{1}{|c|}{rl} &
+\multicolumn{2}{c|}{rs2} &
+\multicolumn{1}{c|}{rs1} &
+\multicolumn{1}{c|}{funct3} &
+\multicolumn{1}{c|}{rd} &
+\multicolumn{1}{c|}{opcode} & R-type (Ext. Atomic) \\
+\cline{2-11}
+
+&
+\multicolumn{2}{|c|}{rs3} &
+\multicolumn{2}{|c|}{funct2} &
+\multicolumn{2}{c|}{rs2} &
+\multicolumn{1}{c|}{rs1} &
+\multicolumn{1}{c|}{funct3} &
+\multicolumn{1}{c|}{rd} &
+\multicolumn{1}{c|}{opcode} & R4-type (Ext. Float) \\
+\cline{2-11}
+
 \end{tabular}
 \end{center}
 
