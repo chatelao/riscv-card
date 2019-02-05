@@ -3,13 +3,13 @@ before_install:
 script:
 - mkdir _build
 - pdflatex -file-line-error -halt-on-error -output-directory _build riscv-card.tex
-# deploy:
-#  provider: releases
-#   api_key:
-#     secure: [YOUR KEY]
-#   file:
-#   - _build/your_file_1.pdf
-#   - _build/your_file_2.pdf
-#   skip_cleanup: true
-#   on:
-#     tags: true
+deploy:
+  provider: releases
+  api_key:
+    secure: ZNJ4Xi3J1EbnIReIM9VZSQyewwDWPV7QdaMpMCkNF1hk+2Fc7t3EDgr6jBjhJqJhkYqoCbND0VPPg0UNyrkK85+xeNQ8Nu02LdbXgm6+wH1yo2O1KD3zv2IhxtHI1Tq1aC4+5kbr4c0HRLzI1rmy1FvirRNQj8/IJ4OyDEQmsy5KnvDl8Y8G93ZeH+STw4A6AnKQkfCzQYlE8eBiwRONKdkA7ykMb5nbwntWRFNqNOwnhtihmZNZrfuNThA8vkdmeziJCSFmfhE/TFuVCTbzQ8IQZyGVzWVSqpomIXgSaW/rdim0/emr3Ua/4HpT186/SkV0I/d5zfQtcJFcPSQvfI0jzis4fO1LHAYo0/94dq4r6iE5j6SbMBFssZd6/nqbp8ZxinJSXaKXVfQZ1w99ki8D7gTzASQGQUVkyK3AiNx4ycLZGtoN+MYYEmaZKG7dBd5SxuSPvYReLuohXUrIW3Hi0kJHnIjUy+iQb/GlOrsKZ973PIV0wQ9Pcdx7JOblhgA0iS+PL8MRQlBmr3TszMxnUj3FKRCoN/91vLgVmpqQwnSSBxoCp8iVwkdCEx6yZ6T48Yzrd104ngrFrBJ8WA0S6mXx5V3s5wcm7LrH53DzRsoRb42VuhMptCoix1RVbCkE9dEVBat8VXF7Rwh6TBW9iebu/YBkmFDJxRm2R8U=
+  file:
+  - _build/riscv-card.pdf
+  skip_cleanup: true
+  on:
+    repo: chatelao/riscv-card
+    tags: true
