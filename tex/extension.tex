@@ -67,21 +67,6 @@ amomin.w  & Atomic MIN        & R     & 0101111    & 0x2    & 0x10   & rd = min(
 
 \begin{center}
 \begin{tabular}
-{T | T | l } \hline
-\rm Rounding Mode & \r Mnemonic & Meaning \hline
-000           & RNE      & Round to Nearest, ties to Even \\
-001           & RTZ      & Round towards Zero \\
-010           & RDN      & Round Down (towards −∞) \\
-011           & RUP      & Round Up (towards +∞) \\
-100           & RMM      & Round to Nearest, ties to Max \\
-101           &          & Invalid. Reserved for future use. \\
-110           &          & Invalid. Reserved for future use. \\
-111           &          & \begin{tabular}[c]{@{}l@{}}In instruction’s rm field,\\   selects dynamic rounding mode;\\     In Rounding Mode register, Invalid.\end{tabular}
-\end{tabular}
-\end{center}
-
-\begin{center}
-\begin{tabular}
 {T | l | c | T | T | T | T | T } \hline
 \rm Inst  & Name                  & FMT   & \rm Opcode & \rm F3 & \rm rs2 & \rm F2 or F7 & \rm Description (C) \\ \hline
 flw       & Flt Load Word         & I  & 0000111 & 0x2 &     &         & rd = M[rs1 + imm]    \\
