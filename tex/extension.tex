@@ -24,28 +24,6 @@ remu     & Remainder (U)     & R   & 0110011    & 0x7    & 0x01   & rd = rs1 \% 
 %\end{itemize}
 
 \begin{center}
-\begin{tabular}{R@{}W@{}W@{}R@{}R@{}F@{}R@{}O}
-\instbitrange{31}{27} &
-\instbit{26} &
-\instbit{25} &
-\instbitrange{24}{20} &
-\instbitrange{19}{15} &
-\instbitrange{14}{12} &
-\instbitrange{11}{7} &
-\instbitrange{6}{0} \\
-\hline
-\multicolumn{1}{|c|}{funct5} &
-\multicolumn{1}{c|}{aq} &
-\multicolumn{1}{c|}{rl} &
-\multicolumn{1}{c|}{rs2} &
-\multicolumn{1}{c|}{rs1} &
-\multicolumn{1}{c|}{funct3} &
-\multicolumn{1}{c|}{rd} &
-\multicolumn{1}{c|}{opcode} \\
-\hline
-5 & 1 & 1 & 5 & 5 & 3 & 5 & 7 \\
-\end{tabular}
-
 \begin{tabular}
 {T | l | c | T | T | T | T } \hline
 \rm Inst  & Name              & FMT   & \rm Opcode & \rm F3 & \rm F5 & \rm Description (C)         \\ \hline
